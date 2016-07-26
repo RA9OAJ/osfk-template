@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="2.5" type="template" client="site">
+    <name>osfk</name>
+    <creationDate>2016-07-25</creationDate>
+    <author>Sarvaritdinov Ravil</author>
+    <authorEmail>ra9oaj@gmail.com</authorEmail>
+    <authorUrl>http://osfk.ru</authorUrl>
+    <copyright>© 2016 Association of employees the Federal Treasury. All Rights Reserved.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <version>1.0.0</version>
+    <description>TPL_OSFK_XML_DESCRIPTION</description>
+
+    <files>
+        <folder>css</folder>
+        <folder>images</folder>
+        <folder>js</folder>
+        <folder>language</folder>
+        <filename>component.php</filename>
+        <filename>error.php</filename>
+        <filename>index.php</filename>
+        <filename>fonts.php</filename>
+        <filename>templateDetails.xml</filename>
+    </files>
+
+    <positions>
+    	<position>menu</position>
+    	<position>left</position>
+    	<position>right</position>
+    	<position>footer</position>
+    </positions>
+
+    <languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.tpl_osfk.ini</language>
+        <language tag="en-GB">en-GB/en-GB.tpl_osfk.sys.ini</language>
+        <language tag="ru-RU">ru-RU/ru-RU.tpl_osfk.ini</language>
+        <language tag="ru-RU">ru-RU/ru-RU.tpl_osfk.sys.ini</language>
+    </languages>
+</extension>
