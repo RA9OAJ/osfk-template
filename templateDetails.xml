@@ -16,6 +16,7 @@
         <folder>images</folder>
         <folder>js</folder>
         <folder>language</folder>
+        <folder>html</folder>
         <filename>component.php</filename>
         <filename>error.php</filename>
         <filename>index.php</filename>
