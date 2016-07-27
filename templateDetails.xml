@@ -25,6 +25,7 @@
     </files>
 
     <positions>
+    	<position>header</position>
     	<position>menu</position>
     	<position>left</position>
     	<position>right</position>

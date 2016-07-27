@@ -29,10 +29,14 @@ function modChrome_well($module, &$params, &$attribs)
 
 			if ($module->showtitle)
 			{
+				echo '<' . $moduleTag . ' class="well-header">';
 				echo '<' . $headerTag . ' class="' . $headerClass . '">' . $module->title . '</' . $headerTag . '>';
+				echo '</' . $moduleTag . '>';
 			}
-
+			
+			echo '<' . $moduleTag . ' class="well-body">';
 			echo $module->content;
+			echo '</' . $moduleTag . '>';
 		echo '</' . $moduleTag . '>';
 	}
 }

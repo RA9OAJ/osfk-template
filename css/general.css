@@ -7,6 +7,27 @@ body{
 	font-family: Play-Regular;
 }
 
+input[type="text"],input[type="password"],input[type='search'],button {
+	border-radius: 0;
+	border: solid 1px #ccc;
+	padding: 5px;
+	margin: 3px;
+}
+
+input[type="checkbox"]{
+	border-radius: 0;
+	border: solid 1px;
+	width: 17px;
+  height: 17px;
+}
+
+button{
+	border-radius: 0;
+	border: solid 1px #ccc;
+	padding: 5px;
+	margin: 3px;
+}
+
 .global_box{
 	display: inline-block;
 	width: 100%; 
@@ -28,18 +49,37 @@ body{
 	display: block;
 	float: left;
 	width: 100%;
-	height: 120px;
+	height: 90px;
 	border-bottom: groove 2px #bbbbbb;
 	background: #34acd4;
 }
 
 ._osfk_hborder{
-	display: block;
-	box-sizing: border-box;
-	border: solid 1px;
+	display: inline-block;
 	width: 65%;
-	height: 60px;
-	background:#F6F6F6;
+	height: 90px;
+	margin: auto 0 auto 15%;
+}
+
+._osfk_logo{
+	display: inline-block;
+	float: left;
+	height: 100%;
+	margin: auto 0 auto 0;
+}
+
+._osfk_hbanner{
+	display: inline-block;
+	vertical-align:middle;
+	max-width: 392px;
+	height: 90px;
+	margin: auto 0 auto auto;
+}
+
+._osfk_header{
+	display: inline-block;
+	float: right;
+	height: 90px;
 	margin: auto;
 }
 
@@ -107,7 +147,6 @@ body{
 	float: right;
 	box-sizing: border-box;
 	width: 20%;
-	height: 10px;
 }
 
 .right_col .menu, .left_col .menu li{
@@ -186,12 +225,18 @@ body{
 	width: 90%;
 	background: #fff;
 	margin: 5px auto 5px auto;
-	padding: 0px 5px 5px 5px;
+	padding: 0;
 	border: solid 1px black;
 }
 
 .well .page-header{
 	margin: 0;
 	padding: 3px 0px 5px 25px;
+	background: #34acd4;
+	color: #fff;
+}
+
+.well .well-body{
+	padding: 7px;
 }
 

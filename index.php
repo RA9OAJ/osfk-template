@@ -26,11 +26,17 @@ JHtml::_('bootstrap.framework');
 	</head>
 	<body>
 		<div class="global_box">
+			<!--Start Header-->
 			<div class="header">
-				<div class="_osfk_hborder">					
+				<div class="_osfk_hborder">	
+					<div class="_osfk_logo"></div>
+					<div class="_osfk_hbanner"></div>
+					<div class="_osfk_header">
+						<jdoc:include type="modules" name="header" />
+					</div>				
 				</div>
-				<jdoc:include type="modules" name="header" />
 			</div>
+			<!--End Header-->
 			<div class="main_box">
 				<div class="main_col">
 					<div class="_osfk_hmenu">
@@ -39,16 +45,22 @@ JHtml::_('bootstrap.framework');
 					<jdoc:include type="message" />
 					<jdoc:include type="component"/>
 				</div>
+				<!--Start Left column-->
 				<div class="left_col">
 					<jdoc:include type="modules" name="left" style="well"/>
 				</div>
+				<!--End Left column-->
+				<!--Start Right column-->
 				<div class="right_col">
 					<jdoc:include type="modules" name="right" style="well"/>
 				</div>
+				<!--End Right column-->
 			</div>
+			<!--Start Footer-->
 			<div class="footer">
 				<jdoc:include type="modules" name="footer" style="well" />
 			</div>
+			<!--End Footer-->
 		</div>			
 	</body>
 </html>
