@@ -41,14 +41,6 @@ input[type="text"]:focus,input[type="password"]:focus,input[type='search']:focus
 	overflow: hidden;
 }
 
-.main_box{
-	display: inline-block;
-	float: left;
-	width: 100%;
-	background: #dddddd;
-	overflow: hidden;
-}
-
 
 /*Header styles*/
 .header{
@@ -105,17 +97,54 @@ input[type="text"]:focus,input[type="password"]:focus,input[type='search']:focus
 	border: solid 1px #34acd4;
 }
 
+/*Containers*/
+.right_back{
+	position:relative;
+	width: 20%;
+	float:left;
+	margin-left: 80%;
+	background: #dddddd;
+}
+
+.content_back{
+	position:relative;
+	float:left;
+	width: 325%;
+	padding: none;
+	margin-left: -325%;
+	border-right: groove 2px #cccccc;
+	background: #f6f6f6;
+}
+
+.left_back{
+	position:relative;
+	float:left;
+	width: 100%;
+	margin-left: -100%;
+	border-right: groove 2px #cccccc;
+	background: #dddddd;
+}
+
+/*----------------*/
+
 /*Main content styles*/
+.main_box{
+	float:left;
+	width: 666%;
+	overflow:hidden;
+	position:relative;
+	left: 200%;
+}
+
 .main_col{
 	display: inline-block;
 	float: none;
 	box-sizing: border-box;
 	width: 65%;
-	border-right: groove 2px #bbbbbb;
-	border-left: groove 2px #bbbbbb;
 	padding: 3px 3px 10px 20px;
 	margin: 0;
 	background: #f6f6f6;
+	margin-left: -85%;
 }
 
 ._osfk_hmenu{
@@ -161,14 +190,16 @@ input[type="text"]:focus,input[type="password"]:focus,input[type='search']:focus
 	box-sizing: border-box;
 	width: 15%;
 	height: 10px;
+	margin-left: -100%;
 }
 
 /*Right column styles*/
 .right_col{
 	display: inline-block;  
-	float: right;
+	float: left;
 	box-sizing: border-box;
 	width: 20%;
+	/*margin-left: -200%;*/
 }
 
 .right_col .menu, .left_col .menu li{

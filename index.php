@@ -25,48 +25,56 @@ JHtml::_('bootstrap.framework');
 		<jdoc:include type="head"/>
 	</head>
 	<body>
-		<div class="global_box">
-			<!--Start Header-->
-			<div class="header">
-				<div class="_osfk_hborder">	
-					<div class="_osfk_logo"></div>
-					<div class="_osfk_hbnr">
-						<!--Start banner-->
-						<div class="_osfk_hbanner"></div>
-						<!--End banner-->
+		<!--Start Header-->
+		<div class="header">
+			<div class="_osfk_hborder">	
+				<div class="_osfk_logo"></div>
+				<div class="_osfk_hbnr">
+					<!--Start banner-->
+					<div class="_osfk_hbanner"></div>
+					<!--End banner-->
+				</div>
+				<div class="_osfk_hdr">
+					<div class="_osfk_header">
+						<jdoc:include type="modules" name="header" />
 					</div>
-					<div class="_osfk_hdr">
-						<div class="_osfk_header">
-							<jdoc:include type="modules" name="header" />
+				</div>				
+			</div>
+		</div>
+		<!--End Header-->
+		<!--Start containers-->
+		<div class="right_back">
+			<div class="content_back">
+				<div class="left_back">
+					<!--Start content container -->
+					<div class="main_box">
+						<div class="main_col">
+						<div class="_osfk_hmenu">
+							<jdoc:include type="modules" name="menu" style="well"/>
 						</div>
-					</div>				
-				</div>
-			</div>
-			<!--End Header-->
-			<div class="main_box">
-				<div class="main_col">
-					<div class="_osfk_hmenu">
-						<jdoc:include type="modules" name="menu" style="well"/>
+							<jdoc:include type="message" />
+							<jdoc:include type="component"/>
+						</div>
+						<!--Start Left column-->
+						<div class="left_col">
+							<jdoc:include type="modules" name="left" style="well"/>
+						</div>
+						<!--End Left column-->
+						<!--Start Right column-->
+						<div class="right_col">
+							<jdoc:include type="modules" name="right" style="well"/>
+						</div>
+						<!--End Right column-->
 					</div>
-					<jdoc:include type="message" />
-					<jdoc:include type="component"/>
+					<!--End content container-->
 				</div>
-				<!--Start Left column-->
-				<div class="left_col">
-					<jdoc:include type="modules" name="left" style="well"/>
-				</div>
-				<!--End Left column-->
-				<!--Start Right column-->
-				<div class="right_col">
-					<jdoc:include type="modules" name="right" style="well"/>
-				</div>
-				<!--End Right column-->
 			</div>
-			<!--Start Footer-->
-			<div class="footer">
-				<jdoc:include type="modules" name="footer" style="well" />
-			</div>
-			<!--End Footer-->
-		</div>			
+		</div>
+		<!--End containers-->		
+		<!--Start Footer-->
+		<div class="footer">
+			<jdoc:include type="modules" name="footer" style="well" />
+		</div>
+		<!--End Footer-->	
 	</body>
 </html>
