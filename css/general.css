@@ -110,7 +110,7 @@ input[type="text"]:focus,input[type="password"]:focus,input[type='search']:focus
 	position:relative;
 	float:left;
 	width: 325%;
-	padding: none;
+	padding: 0;
 	margin-left: -325%;
 	border-right: groove 2px #cccccc;
 	background: #f6f6f6;
@@ -130,21 +130,20 @@ input[type="text"]:focus,input[type="password"]:focus,input[type='search']:focus
 /*Main content styles*/
 .main_box{
 	float:left;
-	width: 666%;
+	width: 154%;
 	overflow:hidden;
 	position:relative;
-	left: 200%;
+	left: 77%;
 }
 
 .main_col{
 	display: inline-block;
 	float: none;
 	box-sizing: border-box;
-	width: 65%;
+	width: 64%;
 	padding: 3px 3px 10px 20px;
 	margin: 0;
 	background: #f6f6f6;
-	margin-left: -85%;
 }
 
 ._osfk_hmenu{
@@ -190,16 +189,14 @@ input[type="text"]:focus,input[type="password"]:focus,input[type='search']:focus
 	box-sizing: border-box;
 	width: 15%;
 	height: 10px;
-	margin-left: -100%;
 }
 
 /*Right column styles*/
 .right_col{
 	display: inline-block;  
-	float: left;
+	float: right;
 	box-sizing: border-box;
 	width: 20%;
-	/*margin-left: -200%;*/
 }
 
 .right_col .menu, .left_col .menu li{
