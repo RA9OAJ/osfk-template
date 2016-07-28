@@ -28,6 +28,11 @@ button{
 	margin: 3px;
 }
 
+input[type="text"]:focus,input[type="password"]:focus,input[type='search']:focus{
+	box-shadow: 0 0 5px rgba(52,172,212,0.9);
+	border: solid 1px #34acd4;
+}
+
 .global_box{
 	display: inline-block;
 	width: 100%; 
@@ -40,7 +45,8 @@ button{
 	display: inline-block;
 	float: left;
 	width: 100%;
-	background:#dddddd;
+	background: #dddddd;
+	overflow: hidden;
 }
 
 
@@ -68,19 +74,35 @@ button{
 	margin: auto 0 auto 0;
 }
 
-._osfk_hbanner{
+._osfk_hbnr{
 	display: inline-block;
-	vertical-align:middle;
 	max-width: 392px;
-	height: 90px;
-	margin: auto 0 auto auto;
+	height: 89px;
+	margin: auto;
 }
 
-._osfk_header{
+._osfk_hbanner{
+	display:table-cell;
+	vertical-align:middle;
+	width: 392px;
+	height: 89px;
+}
+
+._osfk_hdr{
 	display: inline-block;
 	float: right;
-	height: 90px;
 	margin: auto;
+}
+._osfk_header{
+	display:table-cell;
+	vertical-align:middle;
+	padding-right: 3px;
+	height: 89px;	
+}
+
+._osfk_header input[type="text"]:focus, ._osfk_header input[type="password"]:focus, ._osfk_header input[type='search']:focus{
+	box-shadow: 0 0 7px rgba(10,10,10,0.7);
+	border: solid 1px #34acd4;
 }
 
 /*Main content styles*/

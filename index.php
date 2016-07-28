@@ -30,9 +30,15 @@ JHtml::_('bootstrap.framework');
 			<div class="header">
 				<div class="_osfk_hborder">	
 					<div class="_osfk_logo"></div>
-					<div class="_osfk_hbanner"></div>
-					<div class="_osfk_header">
-						<jdoc:include type="modules" name="header" />
+					<div class="_osfk_hbnr">
+						<!--Start banner-->
+						<div class="_osfk_hbanner"></div>
+						<!--End banner-->
+					</div>
+					<div class="_osfk_hdr">
+						<div class="_osfk_header">
+							<jdoc:include type="modules" name="header" />
+						</div>
 					</div>				
 				</div>
 			</div>
