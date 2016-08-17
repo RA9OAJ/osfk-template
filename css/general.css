@@ -41,6 +41,63 @@ input[type="text"]:focus,input[type="password"]:focus,input[type='search']:focus
 	overflow: hidden;
 }
 
+.tooltip{
+	position:absolute;
+	z-index: 1030;
+	display:block;
+	opacity:1;
+	font-size:11px;
+}
+
+.tooltip.top{
+	margin-top: -3px;
+	padding-bottom: 5px;
+}
+
+.tooltip.right{
+	margin-left: 3px;
+}
+
+.tooltip.bottom{
+	margin-top: 3px;
+}
+
+.tooltip.left{
+	margin-left: 3px;
+}
+
+.tooltip-arrow{
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-color: transparent;
+	border-style: solid;
+}
+
+.tooltip-inner{
+	max-width: 300px;
+	padding: 8px;
+	position:relative;
+	color: #fff;
+	text-align:left;
+	text-decoration: none;
+	background-color: rgba(0,0,0,.8);
+	border-radius: 4px;
+}
+
+.tooltip.top .tooltip-arrow {
+	bottom: 0;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px 5px 0;
+	border-top-color: #000;
+}
+
+.hasTooltip{
+	display:inline-block;
+	float:left;
+	vertical-align:middle;
+}
 
 /*Header styles*/
 .header{
@@ -97,6 +154,10 @@ input[type="text"]:focus,input[type="password"]:focus,input[type='search']:focus
 	border: solid 1px #34acd4;
 }
 
+.element-invisible {
+	display: none;
+}
+
 /*Containers*/
 .right_back{
 	position:relative;
@@ -130,7 +191,7 @@ input[type="text"]:focus,input[type="password"]:focus,input[type='search']:focus
 /*Main content styles*/
 .main_box{
 	float:left;
-	width: 154%;
+	width: 153.8%;
 	overflow:hidden;
 	position:relative;
 	left: 77%;
@@ -180,6 +241,41 @@ input[type="text"]:focus,input[type="password"]:focus,input[type='search']:focus
 
 ._osfk_hmenu .menu li:hover{
 	padding: 5px 0px 5px 0px;
+}
+
+.items-leading {
+	border-bottom: solid 1px #ccc;
+}
+
+.row-fluid {
+	width: 100%;
+	overflow: hidden;
+}
+
+.row-fluid [class*='span'] {
+	display: block;
+	float:left;
+}
+
+.row-fluid .span6 {
+	width: 49.99%;
+}
+
+.row-fluid .span4 {
+	width: 32.99%;
+}
+
+.row-fluid .span3 {
+	width: 24.99%;
+}
+
+.row-fluid .span2 {
+	width: 19.99%;
+}
+
+.item {
+	margin: 10px 0 0 0;
+	padding: 5px;
 }
 
 /*Left column styles*/
