@@ -9,7 +9,7 @@
 		{
 			?>
 @font-face { 
-    font-family: <?php echo $fileinfo->getBasename('.ttf'); ?>;
+    font-family: <?php echo $fileinfo->getBasename('.' . $fileinfo->getExtension()); ?>;
     src: url(<?php echo $fonts_url . '/' . $fileinfo->getBasename(); ?>);
    } 
    

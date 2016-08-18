@@ -7,6 +7,11 @@ body{
 	font-family: Play-Regular;
 }
 
+body a {
+	text-decoration: none;
+	color:#222;
+}
+
 input[type="text"],input[type="password"],input[type='search'],button {
 	border-radius: 0;
 	border: solid 1px #ccc;
@@ -21,7 +26,7 @@ input[type="checkbox"]{
   height: 17px;
 }
 
-button{
+button, .btn{
 	border-radius: 0;
 	border: solid 1px #ccc;
 	padding: 5px;
@@ -278,8 +283,133 @@ input[type="text"]:focus,input[type="password"]:focus,input[type='search']:focus
 	padding: 5px;
 }
 
-.item-title {
+.item-title, .page-header {
 	margin: 0 !important;
+}
+
+.icons {
+	display: table-cell;
+	float: right;
+	min-width: 50px;
+	min-height: 25px;
+	margin-left: -50px;
+	margin-right: 5px;
+}
+
+.icons ul.dropdown-menu {
+	display: none;
+}
+
+.nav-hover ul.dropdown-menu {
+	display:block;
+	position:absolute;
+	margin: 35px 0 0 -25px;
+	padding: 5px;
+	z-index: 2;
+	background: #eee;
+	border: solid 1px #ccc;
+}
+
+.nav-hover .dropdown-menu li {
+	display:block;
+	margin: auto;
+	padding: 2px;
+}
+
+.nav-hover .dropdown-menu li a {
+	color:#000;
+}
+
+.icon-print::before {
+	font-family: Heydings-Icons;
+	font-size: 18px;
+	content: 'p '
+}
+
+.icon-envelope::before {
+	font-family: WebSymbols-Regular;
+	font-size: 14px;
+	content: '@ '	
+}
+
+.dropdown-menu li a{
+	text-decoration: none;
+}
+
+.nav-hover ul.dropdown-menu li:hover {
+	background: #9DE2F9;
+}
+
+.btn-group{
+	min-width: 50px;
+	min-height: 25px;
+}
+
+.icons .btn {
+	position:absolute;
+	min-width: 50px;
+	min-height: 25px;
+	border: solid 1px #ddd;
+	text-decoration:none;
+	text-align:center;
+	margin: 0 !important;
+	padding: 0 !important;
+	/*border-radius: 5px;*/
+}
+
+.icon-cog, .caret {
+	text-decoration: none;
+	color: #555;
+	margin: auto 0 auto 0;
+}
+
+.icon-cog::before {
+	font-family: WebSymbols-Regular;
+	font-size: 24px;
+	content: 'S ';
+}
+
+.caret::before {
+	font-family: WebSymbols-Regular;
+	font-size: 16px;
+	content: ']';
+}
+
+.open .btn{
+	box-shadow: 0 0 3px #ccc inset;
+}
+
+.open .caret::before {
+	content: '[';
+}
+
+.article-info {
+	display: table-cell;
+	font-size: 12px;
+	float:none;
+	padding: 0 0 7px 0;
+	color: #555;
+	width: 80%;
+}
+
+.article-info dd {
+	padding: 0 3px 0 0;
+	margin: 0 3px 0 3px;
+	border-right: solid 1px #ccc;
+}
+
+.article-info .article-info-term {
+	display: none;
+}
+
+.createdby, .publisged, .published, .create, .modified, .hits{
+	float: left;
+}
+
+.content_rating {
+	display: block;
+	float:none;
+	margin: 10px 0 10px 0;
 }
 
 /*Left column styles*/
