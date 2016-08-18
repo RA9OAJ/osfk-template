@@ -288,12 +288,13 @@ input[type="text"]:focus,input[type="password"]:focus,input[type='search']:focus
 }
 
 .icons {
-	display: table-cell;
+	display: table;
 	float: right;
 	min-width: 50px;
 	min-height: 25px;
 	margin-left: -50px;
 	margin-right: 5px;
+	/*width: 19%;*/
 }
 
 .icons ul.dropdown-menu {
@@ -330,6 +331,12 @@ input[type="text"]:focus,input[type="password"]:focus,input[type='search']:focus
 	font-family: WebSymbols-Regular;
 	font-size: 14px;
 	content: '@ '	
+}
+
+.icon-edit::before {
+	font-family: Heydings-Icons;
+	font-size: 18px;
+	content: 'w '
 }
 
 .dropdown-menu li a{
@@ -384,7 +391,7 @@ input[type="text"]:focus,input[type="password"]:focus,input[type='search']:focus
 }
 
 .article-info {
-	display: table-cell;
+	display: table;
 	font-size: 12px;
 	float:none;
 	padding: 0 0 7px 0;
