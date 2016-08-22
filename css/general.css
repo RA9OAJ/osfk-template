@@ -231,6 +231,7 @@ input[type="text"]:focus,input[type="password"]:focus,input[type='search']:focus
 
 ._osfk_hmenu .menu li{
 	display: inline;
+	position: relative;
 	min-width: 50px;
 	border-right: groove 2px #cccccc;
 }
@@ -243,9 +244,54 @@ input[type="text"]:focus,input[type="password"]:focus,input[type='search']:focus
 	border-bottom: solid 2px rgba(52, 172, 212, 0);
 }
 
+.menu .current a {
+	border-bottom: solid 2px rgba(52, 172, 212, 1);
+}
+
+.nav-child li {
+	position: relative;
+}
+
+.nav-child li a{
+	display: block;
+	border: none !important;	
+}
 
 ._osfk_hmenu .menu li:hover{
 	padding: 5px 0px 5px 0px;
+}
+
+.menu .nav-child {
+	left: -9999px;
+	opacity: 0;
+	position:absolute;
+	padding: 2px;
+	background: rgba(255,255,255,.8);
+	border: solid 1px #000;
+	white-space: nowrap;
+}
+
+.menu li:hover .nav-child {
+	left: 0px;
+	opacity: 1;
+}
+
+.right_col li:hover .nav-child {
+	left:inherit;
+	right: 95%;
+	opacity: 1;
+}
+
+.menu .nav-child li {
+	display: block;
+	border: none !important;
+	padding: 0 !important;
+}
+
+.menu .nav-child li a {
+	display: block;
+	padding: 5px 5px 5px 5px;
+	width: 100%;
 }
 
 .items-leading {
@@ -409,7 +455,7 @@ input[type="text"]:focus,input[type="password"]:focus,input[type='search']:focus
 	display: none;
 }
 
-.createdby, .publisged, .published, .create, .modified, .hits{
+.article-info dd, .hits{
 	float: left;
 }
 
@@ -445,6 +491,7 @@ input[type="text"]:focus,input[type="password"]:focus,input[type='search']:focus
 
 .right_col .menu li a, .left_col .menu li a{
 	width: 100%;
+	overflow: hidden;
 	padding: 5px 0 5px 0;
 }
 
@@ -456,6 +503,25 @@ input[type="text"]:focus,input[type="password"]:focus,input[type='search']:focus
 .right_col .menu li:hover, .left_col .menu li:hover {
 	border-bottom: none;
 	border-left: solid 2px #34ACD4;
+}
+
+.right_col .menu .current, .left_col .menu .current {
+	border-bottom: none;
+	border-left: solid 2px #34ACD4;
+}
+
+.right_col .menu .current a, .left_col .menu .current a {
+	border-bottom: none;
+}
+
+.right_col .menu .nav-child {
+	display:inline;
+	margin-top: 5px;
+}
+
+.left_col .menu .nav-child {
+	display:inline;
+	margin: 5px 0 0 95%;
 }
 
 /*Footer styles*/
@@ -529,6 +595,6 @@ input[type="text"]:focus,input[type="password"]:focus,input[type='search']:focus
 }
 
 .well .well-body{
-	padding: 7px;
+	padding: 7px 3px 7px 3px;
 }
 
