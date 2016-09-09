@@ -316,6 +316,36 @@ input[type="text"]:focus,input[type="password"]:focus,input[type='search']:focus
 	opacity: 1;
 }
 
+.menu li.parent > a::after {
+	font-family: WebSymbols-Regular;
+	font-size: 16px;
+	content: ' ]';
+}
+
+.menu li.parent:hover > a::after {
+	font-family: WebSymbols-Regular;
+	font-size: 16px;
+	content: ' [';
+}
+
+.right_col .menu li.parent > a::after, .right_col .menu li.parent:hover > a::after {
+	/*font-family: WebSymbols-Regular;
+	font-size: 16px;*/
+	content: none;
+}
+
+.right_col .menu li.parent > a::before {
+	font-family: WebSymbols-Regular;
+	font-size: 16px;
+	content: '] ';
+}
+
+.right_col .menu li.parent:hover > a::before {
+	font-family: WebSymbols-Regular;
+	font-size: 16px;
+	content: '[ ';
+}
+
 .menu .nav-child li {
 	display: block;
 	border: none !important;
@@ -571,7 +601,10 @@ input[type="text"]:focus,input[type="password"]:focus,input[type='search']:focus
 
 /*System messages*/
 .alert{
+	border: solid 1px #E0D482;
 	border-radius: 4px;
+	background:#FFFFCC;
+	padding: 5px;
 }
 
 .alert .close{
