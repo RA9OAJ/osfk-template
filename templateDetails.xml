@@ -13,6 +13,7 @@
 
     <files>
         <folder>css</folder>
+        <folder>fonts</folder>
         <folder>images</folder>
         <folder>js</folder>
         <folder>language</folder>
@@ -21,6 +22,7 @@
         <filename>error.php</filename>
         <filename>index.php</filename>
         <filename>fonts.php</filename>
+        <filename>ext_links.css.php</filename>
         <filename>templateDetails.xml</filename>
     </files>
 

@@ -13,6 +13,7 @@ $template_url = $this->baseurl . '/templates/' . $this->template;
 //Добавляем таблицы стилей
 $doc->addStyleSheet($this->baseurl . '/templates/system/css/system.css');
 $doc->addStyleSheet($template_url . '/fonts.php');
+$doc->addStyleSheet($template_url . '/ext_links.css.php');
 $doc->addStyleSheet($template_url . '/css/general.css');
 
 
