@@ -6,7 +6,8 @@ body a::after {
 	content: "K"; 
 }
 
-body a[href^="/"]::after, body a[href^="#"]::after, body a[href*="localhost"]::after, body a[href*="<?php echo $_SERVER['SERVER_NAME']; ?>"]::after {
+body a[href^="/"]::after, body a[href^="#"]::after, body a[href*="localhost"]::after, body a[href*="<?php echo $_SERVER['SERVER_NAME']; ?>"]::after, 
+body a[data-dismiss*="a"]::after {
 	content: none;
 }
 
@@ -16,7 +17,7 @@ body a[href^="https://"]::after {
 
 body a[href*="youtube.com"]::after {
 	vertical-align: initial;
-	font-size: 16px;
-	color: black;
+	font-size: 18px;
+	color: red;
 	content: "y";
 }
