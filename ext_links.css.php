@@ -7,7 +7,7 @@ body a::after {
 }
 
 body a[href^="/"]::after, body a[href^="#"]::after, body a[href*="localhost"]::after, body a[href*="<?php echo $_SERVER['SERVER_NAME']; ?>"]::after, 
-body a[data-dismiss*="a"]::after {
+body a[data-dismiss*="a"]::after, body a[href^="javascript"]::after, body a[href^="mailto:"]::after {
 	content: none;
 }
 

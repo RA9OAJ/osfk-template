@@ -40,18 +40,22 @@ input[type="text"]:focus,input[type="password"]:focus,input[type='search']:focus
 
 .global_box{
 	display: inline-block;
-	width: 100%; 
-	margin: 0; 
+	width: 100%;
+	margin: 0;
 	padding: 0;
 	overflow: hidden;
 }
 
-.tooltip{
+.tooltip, .popover{
 	position:absolute;
 	z-index: 1030;
 	display:block;
 	opacity:1;
 	font-size:11px;
+}
+
+.popover-title{
+	margin: 2px;
 }
 
 .tooltip.top{
@@ -79,10 +83,10 @@ input[type="text"]:focus,input[type="password"]:focus,input[type='search']:focus
 	border-style: solid;
 }
 
-.tooltip-inner{
+.tooltip-inner, .popover{
 	max-width: 300px;
 	padding: 8px;
-	position:relative;
+#	position:relative;
 	color: #fff;
 	text-align:left;
 	text-decoration: none;
@@ -90,7 +94,7 @@ input[type="text"]:focus,input[type="password"]:focus,input[type='search']:focus
 	border-radius: 4px;
 }
 
-.tooltip.top .tooltip-arrow {
+.tooltip.top .tooltip-arrow{
 	bottom: 0;
 	left: 50%;
 	margin-left: -5px;
@@ -98,10 +102,46 @@ input[type="text"]:focus,input[type="password"]:focus,input[type='search']:focus
 	border-top-color: #000;
 }
 
-.hasTooltip{
+.hasTooltip, .hasPopover{
 	display:inline-block;
 	float:left;
 	vertical-align:middle;
+}
+
+.edit.item-page .tab-pane {
+	display: none;
+}
+
+.chzn-container{
+    width: 216px !important;
+}
+
+#jform_tags_chzn{
+	width:216px !important;
+}
+
+#jform_tags_chzn input[type="text"]{
+	float:left;
+	width:200px !important;
+	height: initial !important;
+	display:inline-block;
+	padding:5px 6px;
+}
+
+#jform_tags_chzn .chzn-drop{
+	width:214px !important;
+}
+
+#jform_catid_chzn{
+	width:217px !important;
+}
+
+.edit.item-page .tab-pane.active{
+	display: block;
+}
+
+.control-group{
+	margin: 10px 0 5px 0;
 }
 
 /*Header styles*/
@@ -266,9 +306,10 @@ input[type="text"]:focus,input[type="password"]:focus,input[type='search']:focus
 	opacity: 0;
 	position:absolute;
 	padding: 2px;
-	background: rgba(255,255,255,.8);
+	background: rgba(255,255,255,.93);
 	border: solid 1px #000;
 	white-space: nowrap;
+	z-index: 256;
 }
 
 .menu li:hover .nav-child {
@@ -319,6 +360,8 @@ input[type="text"]:focus,input[type="password"]:focus,input[type='search']:focus
 .menu li.parent > a::after {
 	font-family: WebSymbols-Regular;
 	font-size: 16px;
+	color: initial;
+	vertical-align: baseline;
 	content: ' ]';
 }
 
@@ -373,7 +416,7 @@ input[type="text"]:focus,input[type="password"]:focus,input[type='search']:focus
 }
 
 .row-fluid .span6 {
-	width: 49%;
+	width: 48%;
 }
 
 .row-fluid .span4 {
@@ -461,9 +504,17 @@ input[type="text"]:focus,input[type="password"]:focus,input[type='search']:focus
 	background: #9DE2F9;
 }
 
+/*.btn-primary {
+	border-color: #00bb00;
+}*/
+
 .btn-group{
 	min-width: 50px;
 	min-height: 25px;
+}
+
+.btn-toolbar .btn-group{
+	display: inline-block;
 }
 
 .icons .btn {
@@ -493,6 +544,7 @@ input[type="text"]:focus,input[type="password"]:focus,input[type='search']:focus
 .caret::before {
 	font-family: WebSymbols-Regular;
 	font-size: 16px;
+	vertical-align: baseline;
 	content: ']';
 }
 
